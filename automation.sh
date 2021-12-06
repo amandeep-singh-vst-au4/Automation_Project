@@ -19,6 +19,6 @@ if [[ $servstat == *"active (running)"* ]]; then
           echo "service started again"
   fi
 
+tar -cvf /tmp/data.tar /var/log/apache2
+aws s3 \ cp /tmp/${Amandeep}data${timestamp}.tar s3://${upgrad-amandeepsingh}/${Amandeep}data${timestamp}.tar
 
-
- 
